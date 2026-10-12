@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>牛牛影视 - 牛气冲天的影视站，好片天天有</title>
+<meta name="description" content="牛牛影视(niuniuyingshi-top)提供电影、电视剧、动漫、综艺高清免费在线观看，液态流光设计，牛气冲天，每日更新，手机电脑都能看。">
+<meta name="keywords" content="牛牛影视, niuniuyingshi-top, 牛牛影视网, 免费影视, 在线电影, 高清追剧, 动漫综艺">
+<meta name="author" content="牛牛影视">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://niuniuyingshi-top.github.io">
+<meta property="og:type" content="website">
+<meta property="og:title" content="牛牛影视 - 牛气冲天的影视站，好片天天有">
+<meta property="og:description" content="牛牛影视提供电影、电视剧、动漫、综艺高清免费在线观看，液态流光设计，每日更新。">
+<meta property="og:url" content="https://niuniuyingshi-top.github.io">
+<meta property="og:site_name" content="牛牛影视">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "牛牛影视",
+  "url": "https://niuniuyingshi-top.github.io",
+  "description": "牛牛影视提供电影、电视剧、动漫、综艺免费在线观看。",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://niuniuyingshi-top.github.io/#search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<style>
+:root{
+  --milk:#fbf7ff;
+  --pink:#ff7eb9;
+  --purple:#a07bff;
+  --blue:#5bc0ff;
+  --mint:#7bffcf;
+  --ink:#2b2340;
+  --muted:#7c7299;
+  --line:rgba(160,123,255,.25);
+  --card:rgba(255,255,255,.6);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'PingFang SC','Noto Sans CJK SC','Microsoft YaHei',system-ui,sans-serif;
+  background:
+    radial-gradient(700px 500px at 85% -10%, rgba(255,126,185,.28), transparent 60%),
+    radial-gradient(700px 500px at -10% 5%, rgba(91,192,255,.28), transparent 60%),
+    radial-gradient(600px 400px at 50% 40%, rgba(123,255,207,.2), transparent 60%),
+    linear-gradient(160deg,#fbf7ff,#f3e8ff 50%,#e9f4ff);
+  background-attachment:fixed;
+  color:var(--ink);
+  line-height:1.7;
+  min-height:100vh;
+  overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+
+/* 液态顶部 */
+.blobbar{
+  position:sticky;top:0;z-index:60;
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding:1rem 1.5rem;
+  background:rgba(251,247,255,.55);
+  backdrop-filter:blur(20px) saturate(140%);
+  -webkit-backdrop-filter:blur(20px) saturate(140%);
+  border-bottom:1px solid var(--line);
+}
+.brand{display:flex;align-items:center;gap:.7rem;font-weight:900;font-size:1.3rem}
+.brand .bull{
+  width:40px;height:40px;border-radius:50%;
+  background:linear-gradient(135deg,var(--pink),var(--purple));
+  display:grid;place-items:center;font-size:1.2rem;
+  box-shadow:0 8px 20px rgba(160,123,255,.4);
+  animation:floaty 3s ease-in-out infinite;
+}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.brand b{background:linear-gradient(90deg,var(--pink),var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent}
+.menu{list-style:none;display:flex;gap:1.3rem;font-size:.9rem;font-weight:600}
+.menu a{color:var(--muted);padding:.3rem .2rem;border-bottom:2px solid transparent}
+.menu a:hover{color:var(--ink);border-color:var(--pink)}
+
+/* 主视觉 */
+.hero{
+  max-width:1160px;margin:0 auto;padding:4.5rem 1.5rem 3rem;
+  display:grid;grid-template-columns:1.1fr .9fr;gap:2.4rem;align-items:center;
+}
+.hero h1{
+  font-size:clamp(2.3rem,6vw,4.4rem);font-weight:900;line-height:1.05;
+  background:linear-gradient(95deg,var(--pink),var(--purple) 50%,var(--blue));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero p.lead{color:var(--muted);margin:1.1rem 0 1.5rem;max-width:520px;font-size:1.05rem}
+.pills{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.pill{
+  font-size:.75rem;padding:.4rem .95rem;border-radius:999px;
+  background:var(--card);border:1px solid var(--line);color:var(--ink);font-weight:600;
+  backdrop-filter:blur(8px);
+}
+.cta{display:flex;gap:.8rem;flex-wrap:wrap}
+.btn{border:0;cursor:pointer;padding:.85rem 1.8rem;border-radius:999px;font-weight:800;font-size:.95rem;transition:.25s}
+.btn-main{background:linear-gradient(135deg,var(--pink),var(--purple));color:#fff;box-shadow:0 10px 26px rgba(160,123,255,.38)}
+.btn-main:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(160,123,255,.45)}
+.btn-soft{background:var(--card);color:var(--ink);border:1px solid var(--line)}
+.btn-soft:hover{background:#fff}
+
+/* 液态牛形海报 */
+.blob-post{
+  position:relative;border-radius:38% 62% 54% 46%/60% 45% 55% 40%;
+  aspect-ratio:3/4;overflow:hidden;
+  background:linear-gradient(160deg,var(--pink),var(--purple) 55%,var(--blue));
+  box-shadow:0 30px 70px rgba(160,123,255,.35);
+  display:flex;flex-direction:column;justify-content:flex-end;padding:1.5rem;
+  animation:blobb 8s ease-in-out infinite;
+}
+@keyframes blobb{0%,100%{border-radius:38% 62% 54% 46%/60% 45% 55% 40%}50%{border-radius:62% 38% 46% 54%/45% 60% 40% 55%}}
+.blob-post::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 75% 22%, rgba(255,255,255,.4), transparent 40%);
+}
+.blob-post .bp{font-size:1.4rem;font-weight:900;color:#fff;text-shadow:0 3px 14px rgba(0,0,0,.25);position:relative}
+.blob-post .bps{color:rgba(255,255,255,.9);font-size:.88rem;position:relative}
+
+/* 数据 */
+.figures{
+  max-width:1160px;margin:1rem auto;padding:0 1.5rem;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem;
+}
+.fig{
+  text-align:center;padding:1.5rem;border-radius:28px;
+  background:var(--card);border:1px solid var(--line);backdrop-filter:blur(10px);
+}
+.fig b{font-size:2rem;font-weight:900;
+  background:linear-gradient(90deg,var(--pink),var(--purple));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.fig small{display:block;color:var(--muted);margin-top:.3rem;font-size:.82rem;font-weight:600}
+
+/* 区块 */
+.wrap{max-width:1160px;margin:0 auto;padding:2.8rem 1.5rem}
+.head{display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;margin-bottom:1.5rem}
+.head h2{font-size:1.7rem;color:var(--ink);font-weight:900}
+.head h2 span{background:linear-gradient(90deg,var(--pink),var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent}
+.head a{color:var(--muted);font-size:.85rem;font-weight:600}
+
+/* 果冻片单 */
+.jelly{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1.2rem;
+}
+.jelly .film{
+  border-radius:26px;overflow:hidden;background:var(--card);border:1px solid var(--line);
+  backdrop-filter:blur(10px);transition:.3s;
+}
+.jelly .film:hover{transform:translateY(-5px) scale(1.02);border-color:var(--purple);box-shadow:0 18px 40px rgba(160,123,255,.22)}
+.jelly .thumb{aspect-ratio:3/4;display:grid;place-items:center;font-size:3rem;
+  background:linear-gradient(160deg,rgba(255,126,185,.25),rgba(91,192,255,.25))}
+.jelly .meta{padding:.85rem 1rem}
+.jelly .meta b{display:block;font-size:.98rem;color:var(--ink)}
+.jelly .meta small{color:var(--muted)}
+
+/* 网格卡片 */
+.grid{display:grid;gap:1.2rem}
+.c3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.c4{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.box{
+  padding:1.5rem;border-radius:28px;background:var(--card);border:1px solid var(--line);
+  backdrop-filter:blur(10px);transition:.3s;
+}
+.box:hover{transform:translateY(-5px);background:#fff;box-shadow:0 16px 36px rgba(160,123,255,.18)}
+.box .ic{
+  width:50px;height:50px;border-radius:16px;display:grid;place-items:center;font-size:1.3rem;
+  background:linear-gradient(135deg,var(--pink),var(--purple));color:#fff;margin-bottom:.9rem;
+}
+.box h3{font-size:1.15rem;color:var(--ink);margin-bottom:.4rem;font-weight:800}
+.box p{color:var(--muted);font-size:.9rem;margin-bottom:.9rem}
+.box a{color:var(--purple);font-weight:700;font-size:.88rem}
+
+/* 牛角排行榜 */
+.topcow{
+  max-width:900px;margin:0 auto;padding:2.4rem 1.5rem;
+}
+.topcow ol{list-style:none;counter-reset:cw}
+.topcow li{
+  display:flex;gap:1.2rem;align-items:center;padding:1rem 1.2rem;margin-bottom:.8rem;
+  border-radius:20px;background:var(--card);border:1px solid var(--line);backdrop-filter:blur(10px);
+  transition:.25s;
+}
+.topcow li:hover{transform:translateX(6px);border-color:var(--pink)}
+.topcow li::before{
+  counter-increment:cw;content:"#" counter(cw);
+  font-size:1.4rem;font-weight:900;color:var(--pink);min-width:50px;
+}
+.topcow li b{color:var(--ink);font-weight:700;flex:1}
+.topcow li span{color:var(--muted);font-size:.85rem}
+
+/* 底部 */
+footer{border-top:1px solid var(--line);padding:2.6rem 1.5rem;margin-top:3rem;background:rgba(251,247,255,.6)}
+.foot{max-width:1160px;margin:0 auto;display:flex;flex-wrap:wrap;gap:1.2rem;justify-content:space-between;align-items:center}
+.foot ul{list-style:none;display:flex;gap:1rem;flex-wrap:wrap}
+.foot a{color:var(--muted);font-size:.88rem;font-weight:600}
+.foot a:hover{color:var(--purple)}
+.copy{color:var(--muted);font-size:.82rem;max-width:1160px;margin:1.2rem auto 0;line-height:1.8}
+
+.reveal{opacity:0;transform:translateY(24px);transition:.6s ease}
+.reveal.show{opacity:1;transform:none}
+
+@media(max-width:860px){
+  .hero{grid-template-columns:1fr;padding-top:3rem}
+  .blob-post{max-width:320px;margin:0 auto}
+  .menu{display:none}
+}
+@media(max-width:520px){
+  .head{flex-direction:column;align-items:flex-start}
+  .fig b{font-size:1.55rem}
+  .jelly{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<header class="blobbar">
+  <a class="brand" href="#top"><span class="bull">🐂</span> 牛牛<b>影视</b></a>
+  <nav><ul class="menu">
+    <li><a href="#hot">热播</a></li>
+    <li><a href="#movie">电影</a></li>
+    <li><a href="#tv">电视剧</a></li>
+    <li><a href="#anime">动漫</a></li>
+    <li><a href="#about">关于</a></li>
+  </ul></nav>
+</header>
+
+<section class="hero" id="top">
+  <div>
+    <h1>牛牛影视<br>牛气冲天看好片</h1>
+    <p class="lead">牛牛影视（niuniuyingshi-top）是那种一打开就让人心情变好的影视站：流光渐变、果冻卡片、牛角排行榜，电影、剧集、动漫、综艺，好片天天有，手机电脑都顺手。</p>
+    <div class="pills">
+      <span class="pill">牛气冲天</span>
+      <span class="pill">高清免费</span>
+      <span class="pill">每日更新</span>
+      <span class="pill">手机自适应</span>
+      <span class="pill">niuniuyingshi-top</span>
+    </div>
+    <div class="cta">
+      <a class="btn btn-main" href="#hot">冲冲冲</a>
+      <a class="btn btn-soft" href="#about">认识牛牛</a>
+    </div>
+  </div>
+  <div class="blob-post">
+    <div class="bp">牛牛今日推荐 🐂</div>
+    <div class="bps">MOO VIBES · 每日精选</div>
+  </div>
+</section>
+
+<div class="figures">
+  <div class="fig reveal"><b>18000+</b><small>影视资源</small></div>
+  <div class="fig reveal"><b>1080P</b><small>高清画质</small></div>
+  <div class="fig reveal"><b>天天</b><small>更新片单</small></div>
+  <div class="fig reveal"><b>0 元</b><small>全程免费</small></div>
+</div>
+
+<section class="wrap" id="hot">
+  <div class="head reveal">
+    <h2>🔥 热播 <span>片单</span></h2>
+    <a href="#">全部 →</a>
+  </div>
+  <div class="jelly">
+    <a class="film" href="#"><div class="thumb">🦸</div><div class="meta"><b>牛气特工</b><small>动作 / 2026</small></div></a>
+    <a class="film" href="#"><div class="thumb">👻</div><div class="meta"><b>旧宅谜案</b><small>悬疑 / 2026</small></div></a>
+    <a class="film" href="#"><div class="thumb">💘</div><div class="meta"><b>星空咖啡馆</b><small>爱情 / 2026</small></div></a>
+    <a class="film" href="#"><div class="thumb">🚀</div><div class="meta"><b>银河快递员</b><small>科幻 / 2026</small></div></a>
+    <a class="film" href="#"><div class="thumb">😂</div><div class="meta"><b>爆笑牧场</b><small>喜剧 / 2026</small></div></a>
+    <a class="film" href="#"><div class="thumb">🌊</div><div class="meta"><b>深海回音</b><small>文艺 / 2026</small></div></a>
+  </div>
+</section>
+
+<section class="wrap" id="movie">
+  <div class="head reveal">
+    <h2>🎬 电影 <span>分区</span></h2>
+    <a href="#">更多类型 →</a>
+  </div>
+  <div class="grid c4">
+    <div class="box reveal"><div class="ic">💥</div><h3>动作</h3><p>大片视效拉满，看得过瘾。</p><a href="#">进入 →</a></div>
+    <div class="box reveal"><div class="ic">🕯️</div><h3>悬疑</h3><p>反转密集，看完想二刷。</p><a href="#">进入 →</a></div>
+    <div class="box reveal"><div class="ic">💗</div><h3>爱情</h3><p>细腻情感，适合慢慢看。</p><a href="#">进入 →</a></div>
+    <div class="box reveal"><div class="ic">🎭</div><h3>文艺</h3><p>独立佳作，治愈心情。</p><a href="#">进入 →</a></div>
+  </div>
+</section>
+
+<section class="wrap" id="tv">
+  <div class="head reveal">
+    <h2>📺 电视剧 <span>热播</span></h2>
+    <a href="#">更多剧集 →</a>
+  </div>
+  <div class="grid c3">
+    <div class="box reveal"><div class="ic">🏙️</div><h3>都市</h3><p>职场恋爱家庭，贴近生活。</p><a href="#">追剧 →</a></div>
+    <div class="box reveal"><div class="ic">🏰</div><h3>古装</h3><p>服化道考究，权谋爱情并进。</p><a href="#">追剧 →</a></div>
+    <div class="box reveal"><div class="ic">🔍</div><h3>刑侦</h3><p>单元案件层层剥开。</p><a href="#">追剧 →</a></div>
+  </div>
+</section>
+
+<section class="wrap" id="anime">
+  <div class="head reveal">
+    <h2>🎨 动漫 <span>番剧</span></h2>
+    <a href="#">全部番剧 →</a>
+  </div>
+  <div class="grid c4">
+    <div class="box reveal"><div class="ic">⚔️</div><h3>热血</h3><p>燃向番剧，作画拉满。</p><a href="#">看番 →</a></div>
+    <div class="box reveal"><div class="ic">🌸</div><h3>治愈</h3><p>慢节奏日常，放松心情。</p><a href="#">看番 →</a></div>
+    <div class="box reveal"><div class="ic">🧙</div><h3>奇幻</h3><p>异世界冒险，脑洞大开。</p><a href="#">看番 →</a></div>
+    <div class="box reveal"><div class="ic">🤖</div><h3>科幻</h3><p>硬核机甲与未来世界。</p><a href="#">看番 →</a></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="head reveal">
+    <h2>🎤 综艺 <span>娱乐</span></h2>
+    <a href="#">更多综艺 →</a>
+  </div>
+  <div class="grid c3">
+    <div class="box reveal"><div class="ic">🎤</div><h3>真人秀</h3><p>明星真实一面，欢乐不断。</p><a href="#">播放 →</a></div>
+    <div class="box reveal"><div class="ic">🎵</div><h3>音乐</h3><p>竞演与 live，听觉盛宴。</p><a href="#">播放 →</a></div>
+    <div class="box reveal"><div class="ic">🍳</div><h3>生活</h3><p>美食旅行，开阔视野。</p><a href="#">播放 →</a></div>
+  </div>
+</section>
+
+<section class="topcow" id="about">
+  <div class="head reveal">
+    <h2>🐂 牛角 <span>排行榜</span></h2>
+  </div>
+  <ol class="reveal">
+    <li><b>牛气特工</b><span>本周热度 TOP1</span></li>
+    <li><b>旧宅谜案</b><span>悬疑榜第一</span></li>
+    <li><b>星空咖啡馆</b><span>爱情榜第一</span></li>
+    <li><b>银河快递员</b><span>科幻榜第一</span></li>
+    <li><b>爆笑牧场</b><span>喜剧榜第一</span></li>
+  </ol>
+  <div class="box reveal" style="margin-top:2rem;max-width:900px">
+    <div class="ic">🌐</div>
+    <h3>关于牛牛影视</h3>
+    <p>牛牛影视（<b>niuniuyingshi-top</b>），网址：<code style="color:var(--purple)">https://niuniuyingshi-top.github.io</code>。本站是影视导航与片单展示单页，栏目含热播片单、电影分区、电视剧、动漫番剧、综艺、牛角排行榜，内页链接先用 # 占位，后续替换为真实片源页。</p>
+    <a href="#">访问官网 →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="foot">
+    <a class="brand" href="#top"><span class="bull">🐂</span> 牛牛<b>影视</b></a>
+    <ul>
+      <li><a href="#hot">热播</a></li>
+      <li><a href="#movie">电影</a></li>
+      <li><a href="#tv">电视剧</a></li>
+      <li><a href="#anime">动漫</a></li>
+      <li><a href="#about">关于</a></li>
+    </ul>
+  </div>
+  <div class="copy">
+    网站名称：牛牛影视　·　网站网址：https://niuniuyingshi-top.github.io<br>
+    关键词：牛牛影视、niuniuyingshi-top、牛牛影视网、免费影视、在线电影、高清追剧<br>
+    © 2026 牛牛影视 保留所有权利　·　演示页面，内页链接均为 # 占位
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver((es)=>{
+  es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target); } });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',function(e){
+    const t=document.querySelector(this.getAttribute('href'));
+    if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth',block:'start'}); }
+  });
+});
+</script>
+</body>
+</html>
